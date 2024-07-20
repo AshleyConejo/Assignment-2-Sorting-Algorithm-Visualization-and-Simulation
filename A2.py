@@ -2,8 +2,6 @@ import random
 from playsound import playsound
 import time
 
-
-
 class Merge_Sort_A():
     def __init__(self):
         self.Arrayempty = []
