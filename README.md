@@ -3,8 +3,7 @@
 This project implements the Merge Sort algorithm with added sound effects for each significant step in the process. The algorithm splits an array into halves, recursively sorts each half, and then merges them back together while playing a sound effect at each step.
 
 Prerequisites:
--Before running the code, ensure you have the necessary Python packages installed. You can install them using pip:
-pip install playsound
+-Before running the code, ensure you have the necessary Python packages installed. You can install them using  " pip install playsound "
 
 Notes:
 1. The sound file "DING Sound Effects.mp3" should be located in a folder named Sound 3 in the same directory as the script.
