@@ -41,7 +41,7 @@ class Merge_Sort_A():
         
         return self.merge_sort(split_left, split_right)
     
-    
+
     def merge_sort(self,left_half, right_half):
         sorted_array = []
         self.sounds_for_sort()
@@ -82,3 +82,14 @@ class Merge_Sort_A():
     def sounds_for_sort(self):
         playsound('Sound 3/Sound 3.mp3')
         time.sleep(0.1) 
+
+Sorted_array = Merge_Sort_A()
+
+while True:
+    print("Merge sort Algorithm")
+
+    user_option = int(input("Choose the size of the array to use: "))  
+    Sorted_array.array_maximun_randomize(user_option)
+    print("The array is: ", Sorted_array.Arrayempty)
+    print("Sorted array is: ", Sorted_array.split_Arrays())
+    
