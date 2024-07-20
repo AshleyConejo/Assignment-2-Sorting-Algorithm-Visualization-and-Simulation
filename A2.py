@@ -80,7 +80,7 @@ class Merge_Sort_A():
             return sorted_array
     
     def sounds_for_sort(self):
-        playsound('Sound 3/Sound 3.mp3')
+        playsound('Sound 3/DING Sound Effects.mp3')
         time.sleep(0.1) 
 
 Sorted_array = Merge_Sort_A()
