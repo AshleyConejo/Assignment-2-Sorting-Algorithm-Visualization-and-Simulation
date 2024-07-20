@@ -40,3 +40,45 @@ class Merge_Sort_A():
         print("Split Right ", split_right)
         
         return self.merge_sort(split_left, split_right)
+    
+    
+    def merge_sort(self,left_half, right_half):
+        sorted_array = []
+        self.sounds_for_sort()
+        print(f"Initial left_half: {left_half}")
+        self.sounds_for_sort()
+        print(f"Initial right_half: {right_half}")
+
+        while (left_half and right_half):
+
+            if left_half[0] < right_half[0]:
+                    self.sounds_for_sort()
+                    sorted_array.append(left_half[0])
+                    print(f"Appending {left_half[0]} from left_half")
+                    left_half.pop(0)
+            else:
+                    self.sounds_for_sort()
+                    sorted_array.append(right_half[0])
+                    print(f"Appending {right_half[0]} from right_half")
+                    right_half.pop(0)
+
+            self.sounds_for_sort()
+            print(f"Current sorted_array: {sorted_array}")
+            
+
+            if left_half:
+                self.sounds_for_sort()
+                sorted_array += left_half
+                print(f"Appending remaining left_half: {left_half}")
+                
+
+            if right_half:
+                self.sounds_for_sort()
+                sorted_array+= right_half
+                print(f"Appending remaining right_half: {right_half}")
+                
+            return sorted_array
+    
+    def sounds_for_sort(self):
+        playsound('Sound 3/Sound 3.mp3')
+        time.sleep(0.1) 
